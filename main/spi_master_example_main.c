@@ -102,7 +102,7 @@ DRAM_ATTR static const lcd_init_cmd_t st_init_cmds[]={
     /* VCOM Setting, VCOM=1.175V */
     {0xBB, {0x2B}, 1},
     /* LCM Control, XOR: BGR, MX, MH */
-    {0xC0, {0x2C}, 1},
+    {0xC0, {(0x0C)|(1<<5)|(1<<4)}, 1},
     /* VDV and VRH Command Enable, enable=1 */
     {0xC2, {0x01, 0xff}, 2},
     /* VRH Set, Vap=4.4+... */
