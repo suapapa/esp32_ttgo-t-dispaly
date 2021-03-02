@@ -2,7 +2,7 @@ menu "Example Configuration"
 
     choice LCD_TYPE
         prompt "LCD module type"
-        default LCD_TYPE_AUTO
+        default LCD_TYPE_ST7789V
         help
             The type of LCD on the evaluation board.
 
